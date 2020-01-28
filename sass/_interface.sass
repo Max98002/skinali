@@ -23,6 +23,29 @@ button, input
     color: $primary
   &:hover
     cursor: pointer
+.bg-secondary
+  background-color: $bg-secondary
+.input
+  height: 80px
+  padding-left: 30px
+  border: 1px solid #dddddd
+input[type="checkbox"]
+  &:checked + label::before
+    background-color: $primary
+.checkbox
+  display: none
+  &__label 
+    display: flex
+    align-items: center
+    margin-right: 40px
+    cursor: pointer
+    &::before
+      content: ""
+      margin-right: 19px
+      width: 30px
+      height: 30px
+      border: 1px solid #dddddd
+      transition: all .6s
 @media screen and ( max-width: 576px )
   .button
     &-o

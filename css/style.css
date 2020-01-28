@@ -395,6 +395,45 @@ button, input {
   cursor: pointer;
 }
 
+.bg-secondary {
+  background-color: #f1f1f1;
+}
+
+.input {
+  height: 80px;
+  padding-left: 30px;
+  border: 1px solid #dddddd;
+}
+
+input[type="checkbox"]:checked + label::before {
+  background-color: #507fe1;
+}
+
+.checkbox {
+  display: none;
+}
+
+.checkbox__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+.checkbox__label::before {
+  content: "";
+  margin-right: 19px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #dddddd;
+  -webkit-transition: all .6s;
+  transition: all .6s;
+}
+
 @media screen and (max-width: 576px) {
   .button-o {
     font-size: 10px;
@@ -594,7 +633,7 @@ button, input {
 }
 
 .hero {
-  background: #f1f1f1 url("../img/header/hero.png") no-repeat center top;
+  background: #f1f1f1 url("../img/header/hero-bg.jpg") no-repeat center top;
   background-size: cover;
   padding-top: 120px;
   padding-bottom: 270px;
@@ -630,5 +669,79 @@ button, input {
     background-size: 100%;
     background-position: top right;
   }
+}
+
+.offer {
+  padding: 129px 0;
+}
+
+.offer__block {
+  margin-top: -230px;
+  padding: 80px;
+  background: url("../img/offer/offer-bg.jpg") no-repeat center right/contain;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+
+.offer__title {
+  margin: 0;
+  margin-bottom: 20px;
+  letter-spacing: 0.75px;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+}
+
+.offer__subtitle {
+  display: block;
+  margin-bottom: 30px;
+  font-size: 21px;
+  font-weight: 300;
+}
+
+.form__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 900px;
+  margin-bottom: 25px;
+}
+
+.form__row:last-child {
+  margin-bottom: 0;
+}
+
+.form__label {
+  display: block;
+  font-size: 17px;
+  margin-bottom: 15px;
+}
+
+.form__group {
+  -ms-flex-preferred-size: 33.33%;
+      flex-basis: 33.33%;
+}
+
+.form__input {
+  width: 100%;
+  border-right-width: 0px;
+}
+
+.form__input_b {
+  border-right-width: 1px;
+}
+
+.form__button {
+  height: 80px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
 }
 /*# sourceMappingURL=style.css.map */
