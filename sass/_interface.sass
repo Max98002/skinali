@@ -1,2 +1,25 @@
 *, *:after, *:before
   box-sizing: border-box
+
+img
+  max-width: 100%
+
+body
+  +light
+  font-size: 14px
+  color: $text-color
+button, input
+  outline: none
+.button
+  padding: 17px 22px
+  font-size: 12px
+  color: #ffffff
+  border: 2px solid $primary
+  background-color: #507fe1
+  text-transform: uppercase
+  +bold
+  &-o
+    background-color: transparent
+    color: $primary
+  &:hover
+    cursor: pointer
