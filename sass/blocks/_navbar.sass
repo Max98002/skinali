@@ -8,7 +8,6 @@
     display: flex
     align-items: center
     justify-content: space-between
-    min-height: 80px
   &__mobile, &__landline
     text-align: right
   &__work-time
@@ -75,3 +74,27 @@
     display: block
     font-size: 14px
     color: $text-color-light
+@media screen and ( max-width: 991px )
+  .navbar
+    &__mobile, &__landline
+      display: none
+  .menu
+    &__link
+      font-size: 10px
+@media screen and ( max-width: 768px )
+  .menu
+    &__nav
+      flex-direction: column
+      justify-content: center
+    &__link
+      margin-bottom: 30px
+      font-size: 16px
+@media screen and ( max-width: 576px )
+  .logo
+    display: none
+  .menu
+    top: 60px
+    height: 50%
+    &-button
+      height: 60px
+      width: 60px

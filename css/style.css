@@ -395,9 +395,34 @@ button, input {
   cursor: pointer;
 }
 
+@media screen and (max-width: 576px) {
+  .button-o {
+    font-size: 10px;
+  }
+}
+
 .container {
   max-width: 1170px;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 0 20px;
+  }
 }
 
 .navbar {
@@ -418,7 +443,6 @@ button, input {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  min-height: 80px;
 }
 
 .navbar__mobile, .navbar__landline {
@@ -530,11 +554,51 @@ button, input {
   color: #7b7b79;
 }
 
+@media screen and (max-width: 991px) {
+  .navbar__mobile, .navbar__landline {
+    display: none;
+  }
+  .menu__link {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menu__nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .menu__link {
+    margin-bottom: 30px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .logo {
+    display: none;
+  }
+  .menu {
+    top: 60px;
+    height: 50%;
+  }
+  .menu-button {
+    height: 60px;
+    width: 60px;
+  }
+}
+
 .hero {
-  background: #f1f1f1 url("../img/header/hero.png") no-repeat center top 80px;
-  background-size: contain;
-  padding-top: 200px;
+  background: #f1f1f1 url("../img/header/hero.png") no-repeat center top;
+  background-size: cover;
+  padding-top: 120px;
   padding-bottom: 270px;
+  margin-top: 80px;
 }
 
 .hero__title {
@@ -558,5 +622,13 @@ button, input {
   padding: 25px 45px;
   font-size: 15px;
   font-weight: 400;
+}
+
+@media screen and (max-width: 991px) {
+  .hero {
+    margin-top: 60px;
+    background-size: 100%;
+    background-position: top right;
+  }
 }
 /*# sourceMappingURL=style.css.map */
