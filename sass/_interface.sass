@@ -10,6 +10,15 @@ body
   color: $text-color
 button, input
   outline: none
+.section
+  padding: 100px 0
+  &__title
+    margin-bottom: 100px
+  &-title
+    text-align: center
+    font-size: 30px
+    +bold
+    text-transform: uppercase
 .button
   padding: 17px 22px
   font-size: 12px
@@ -46,7 +55,18 @@ input[type="checkbox"]
       height: 30px
       border: 1px solid #dddddd
       transition: all .6s
+@media screen and ( max-width: 768px )
+  .section
+    padding: 60px 0
+    &__title
+      margin-bottom: 60px
+    &-title
+      font-size: 20px
 @media screen and ( max-width: 576px )
   .button
     &-o
       font-size: 10px
+  .checkbox
+    &__label
+      margin-right: 0
+      margin-bottom: 20px

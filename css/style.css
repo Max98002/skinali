@@ -376,6 +376,21 @@ button, input {
   outline: none;
 }
 
+.section {
+  padding: 100px 0;
+}
+
+.section__title {
+  margin-bottom: 100px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+  text-transform: uppercase;
+}
+
 .button {
   padding: 17px 22px;
   font-size: 12px;
@@ -434,9 +449,25 @@ input[type="checkbox"]:checked + label::before {
   transition: all .6s;
 }
 
+@media screen and (max-width: 768px) {
+  .section {
+    padding: 60px 0;
+  }
+  .section__title {
+    margin-bottom: 60px;
+  }
+  .section-title {
+    font-size: 20px;
+  }
+}
+
 @media screen and (max-width: 576px) {
   .button-o {
     font-size: 10px;
+  }
+  .checkbox__label {
+    margin-right: 0;
+    margin-bottom: 20px;
   }
 }
 
@@ -785,6 +816,60 @@ input[type="checkbox"]:checked + label::before {
   }
   .form__input {
     border-right-width: 1px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .form__row-checkbox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+.features-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.features-block__item {
+  -ms-flex-preferred-size: 33.33%;
+      flex-basis: 33.33%;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.features-block__text {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 991px) {
+  .features-block__item {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .features-block__item {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
     margin-bottom: 20px;
   }
 }
