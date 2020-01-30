@@ -1,0 +1,53 @@
+.price
+  background-color: #e5e5e5
+  &-block
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+    &__card
+      margin-bottom: 10px
+  &-card
+    background-color: #ffffff
+    position: relative
+    &__image
+      img
+        display: block
+    &__text
+      padding: 23px 21px 0px 21px
+      overflow: hidden
+    &__pricetag
+      display: flex
+      justify-content: space-between
+      align-items: center
+      margin-bottom: 23px
+    &__title
+      margin: 0
+      font-size: 15px
+    &__cost
+      font-size: 15px
+      +bold
+    &__button
+      position: absolute
+      z-index: -1
+      bottom: 0
+      left: 0
+      width: 100%
+      height: 60px
+      padding: 0 21px 19px 21px
+      text-align: center
+      background-color: #ffffff
+      box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1)
+      button
+        width: 100%
+    &:hover
+      cursor: pointer
+      .price-card__button
+        z-index: 99
+        bottom: -60px
+@media screen and ( max-width: 991px )
+  .price
+    &-block
+      justify-content: center
+      &__card
+        margin: 10px
