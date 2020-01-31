@@ -1,0 +1,26 @@
+.question
+  &-block
+    display: flex
+    justify-content: center
+    align-items: center
+  &__title
+    font-size: 30px
+    +bold
+  &__link
+    margin-left: 50px
+    display: inline-block
+    font-size: 24px
+    color: #5a8de2
+@media screen and ( max-width: 768px )
+  .question
+    &__title
+      font-size: 20px
+    &__link
+      font-size: 16px
+@media screen and ( max-width: 568px )
+  .question
+    &-block
+      flex-wrap: wrap
+      justify-content: space-between
+    &__link
+      margin-left: 0
