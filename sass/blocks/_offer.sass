@@ -3,9 +3,15 @@
   &__block
     margin-top: -230px
     padding: 80px
-    background: url('../img/offer/offer-bg.jpg') no-repeat center right / contain
-    background-color: #ffffff
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1)
+  &-block
+    &_calc-bg
+      background: url('../img/offer/offer-bg.jpg') no-repeat center right / contain
+      background-color: #ffffff
+    &_price-bg
+      margin-top: -260px
+      background: url('../img/offer/price-bg.jpg') no-repeat center right / contain
+      background-color: #ffffff
   &__title
     margin: 0
     margin-bottom: 20px
@@ -15,6 +21,7 @@
     +bold
   &__subtitle
     display: block
+    max-width: 833px
     margin-bottom: 30px
     font-size: 21px
     font-weight: 300
@@ -43,6 +50,9 @@
     width: 100%
     font-size: 16px
     font-weight: 400
+  &__policy
+    display: inline-block
+    margin-left: 45px
 @media screen and ( max-width: 1199px )
   .offer
     &-block
@@ -54,6 +64,8 @@
       padding: 40px
       background: none
       background-color: #ffffff
+      &_price-bg
+        margin-top: -200px
     &__title
       font-size: 20px
     &__subtitle
@@ -69,6 +81,9 @@
     &__input 
       border-right-width: 1px
       margin-bottom: 20px
+    &__policy
+      margin-top: 20px
+      margin-left: 0
 @media screen and ( max-width: 576px )
   .form
     &__row
