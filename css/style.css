@@ -1408,6 +1408,9 @@ input[type="checkbox"]:checked + label::before {
     width: 100%;
     top: 110%;
   }
+  .before-slider__dots {
+    margin: 10px;
+  }
   .arrow {
     padding: 0;
   }
@@ -1442,6 +1445,7 @@ input[type="checkbox"]:checked + label::before {
   position: relative;
   max-width: 370px;
   min-height: 144px;
+  margin: auto;
   padding: 20px;
   background-color: #ffffff;
   font-size: 15px;

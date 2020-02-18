@@ -23,4 +23,25 @@ document.addEventListener('DOMContentLoaded', () => {
     prevArrow: $('.arrow-right')
   });
 
+  $('.reviews-slider').slick({
+    arrows: false,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 975,
+        settings: {
+          slidesToShow: 2,
+          autoplay: true,
+          autoplaySpeead: 5000,
+        },
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          autoplay: true,
+          autoplaySpeead: 5000,
+        }
+    }]
+  });
+
 })
