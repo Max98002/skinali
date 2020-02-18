@@ -985,6 +985,9 @@ input[type="checkbox"]:checked + label::before {
         -ms-flex-align: start;
             align-items: flex-start;
   }
+  .form__button {
+    font-size: 12px;
+  }
 }
 
 .features-block {
